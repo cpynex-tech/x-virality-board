@@ -1,1 +1,219 @@
-FULL_FILE_VIA_STDIN
+{
+  "title": "Daily X narrative digest — 2026-09-30",
+  "date": "2026-09-30",
+  "timezone": "America/New_York",
+  "updated": "2026-09-30T18:56:31-04:00",
+  "brand_title": "Your X Virality Score",
+  "brand_handle": "@cpynex",
+  "inbox_drafts": [
+    {
+      "kind": "scout",
+      "score": 100,
+      "url": "https://x.com/unusual_whales/status/2105357759818658139",
+      "handle": "unusual_whales",
+      "text": "Meta took a $355 million tax break on Zuckerberg's $4 billion pay by classifying him as a researcher. That's the Times' number. It doesn't mean the IRS has signed off.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 95,
+      "url": "https://x.com/cb_doge/status/2105394457990643930",
+      "handle": "cb_doge",
+      "text": "Hegseth says Elon Musk will co-lead Project Meridian with Palmer Luckey and Newt Gingrich. They meet today. The report on the future of warfare isn't due for 120 days.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 95,
+      "url": "https://x.com/SawyerMerritt/status/2105389041826840901",
+      "handle": "SawyerMerritt",
+      "text": "Hegseth says Elon Musk, Palmer Luckey, and Newt Gingrich will co-lead a War Department study of future warfare. They meet today. The report isn't due for 120 days.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 85,
+      "url": "https://x.com/unusual_whales/status/2104719961344348583",
+      "handle": "unusual_whales",
+      "text": "Anthropic's prospectus shows a $42 billion net loss for 2025, plus $518 billion of cloud and compute obligations for the coming year. Those obligations are still on paper.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 73,
+      "url": "https://x.com/unusual_whales/status/2104720330686435656",
+      "handle": "unusual_whales",
+      "text": "Anthropic has filed for an IPO. Reuters has the filing. There's no share price and no first-trade date in the post.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 32,
+      "url": "https://x.com/unusual_whales/status/2105366819414405256",
+      "handle": "unusual_whales",
+      "text": "The White House posted an Accord on Super Intelligence that appears to misspell United States. That's the whole claim. The post doesn't show whether it's one typo or the whole document.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "scout",
+      "score": 24,
+      "url": "https://x.com/unusual_whales/status/2104707953874112649",
+      "handle": "unusual_whales",
+      "text": "OpenAI is scrapping its next model because it failed the company's own safety standards. That's the WSJ account. The post never names the model.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 399017,
+      "url": "https://x.com/SawyerMerritt/status/2105081309265637413",
+      "handle": "SawyerMerritt",
+      "text": "AT&T's CEO says SpaceX's plan to put cell gear on houses isn't viable. He says satellite still won't beat fiber over the next 10 years, and you can't radiate from someone's house unless the law changes.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 122979,
+      "url": "https://x.com/SawyerMerritt/status/2105073473093787773",
+      "handle": "SawyerMerritt",
+      "text": "Tesla published an analyst consensus of 462,000 deliveries and 15.9 GWh of storage for Q3 2026. Tesla compiled the sheet. It isn't Tesla's own delivery guide.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 106887,
+      "url": "https://x.com/BullTheoryio/status/2105274753414250596",
+      "handle": "BullTheoryio",
+      "text": "The final Q2 GDP revision printed 2.2%, above a 1.5% expectation. This is the last look at last quarter.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 63067,
+      "url": "https://x.com/unusual_whales/status/2105301389521952860",
+      "handle": "unusual_whales",
+      "text": "JPMorgan says Middle East crude exports are back to 98% of prewar levels. That's shipment volume. It says nothing about the price.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 42002,
+      "url": "https://x.com/unusual_whales/status/2105305917990597013",
+      "handle": "unusual_whales",
+      "text": "August core PCE landed at 3.0% year over year, under a 3.3% Bloomberg expectation. One soft month isn't a new trend.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 28555,
+      "url": "https://x.com/BullTheoryio/status/2105277845874561223",
+      "handle": "BullTheoryio",
+      "text": "Bull Theory says gold and silver picked up $230 billion in two minutes after PCE hit a 6-month low. That's their market-cap claim off the print.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 26550,
+      "url": "https://x.com/BullTheoryio/status/2105286510379737223",
+      "handle": "BullTheoryio",
+      "text": "ADP says 90,000 private jobs in September, above a 73,000 estimate, and August core PCE rose 0.2% instead of 0.3%. Analysts say a measurement change can shave up to 20 basis points off that inflation number.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 25119,
+      "url": "https://x.com/AshCrypto/status/2105305031331434824",
+      "handle": "AshCrypto",
+      "text": "Fed hike odds dropped from 70% to 34%, and the post calls that bullish for markets. Those odds are a market price, so they can move back.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 22388,
+      "url": "https://x.com/cb_doge/status/2105287530749002231",
+      "handle": "cb_doge",
+      "text": "SpaceXAI got the first Supermicro NVIDIA Vera Rubin NVL72 racks out of San Jose. Each rack holds 72 Rubin GPUs and 36 Vera CPUs. First shipment isn't a finished cluster.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 20315,
+      "url": "https://x.com/cb_doge/status/2105277460002787371",
+      "handle": "cb_doge",
+      "text": "Emirates says 55 jets have Starlink now, and it wants free Wi-Fi on all 232 of its 777s and A380s by mid-2027. That date is the plan, not a finished fleet.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 19521,
+      "url": "https://x.com/cb_doge/status/2105290915510460915",
+      "handle": "cb_doge",
+      "text": "Citi analyst John Godyn calls Starship Flight 14 a step toward $900 SpaceX shares and a $12 trillion company. That's his target. SpaceX doesn't trade there.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 19011,
+      "url": "https://x.com/cb_doge/status/2105279240589722050",
+      "handle": "cb_doge",
+      "text": "Aer Lingus finished Starlink on its whole narrow-body transatlantic fleet, on 10-plus North American routes. That's the narrow-body fleet only.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 12189,
+      "url": "https://x.com/SawyerMerritt/status/2105305258180137237",
+      "handle": "SawyerMerritt",
+      "text": "Aer Lingus turned on free Starlink Wi-Fi across its narrow-body transatlantic fleet, on more than 10 North American routes via Dublin. This rollout stops at narrow-body jets.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 9895,
+      "url": "https://x.com/teslascope/status/2105277230603464956",
+      "handle": "teslascope",
+      "text": "Tesla software 2026.27.11 just reached about 4,510 more cars. FSD V14.3.10 is on eligible AI4 vehicles. The HW3 Lite build is listed at 0%.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 9617,
+      "url": "https://x.com/BullTheoryio/status/2105301648960844107",
+      "handle": "BullTheoryio",
+      "text": "Bull Theory puts $530 billion on US stocks since the open, tied to a PCE print at a 6-month low. Treat that dollar figure as their count.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    },
+    {
+      "kind": "watchlist",
+      "views": 7509,
+      "url": "https://x.com/joinautopilot/status/2105299470661689439",
+      "handle": "joinautopilot",
+      "text": "Nvidia is being called the most valuable company on earth at $5.4 trillion, on the claim it makes almost every chip powering AI. The 15% they cite is a public portfolio, not the share price.",
+      "source": "X Viral Rewriter",
+      "received": "2026-09-30"
+    }
+  ],
+  "hits_count": 34,
+  "note": "HITS_ARRAY_OMITTED_IN_THIS_ATTEMPT"
+}
