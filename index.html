@@ -219,7 +219,7 @@ footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);color:v
   </footer>
 </div>
 <script>
-function esc(s){return String(s==null?'':s).replace(/&/g,'&').replace(/</g,'<').replace(/>/g,'>').replace(/"/g,'"').replace(/'/g,'&#39;')}
+function esc(s){return String(s==null?'':s).replace(/\u0026/g,'\u0026amp;').replace(/</g,'\u0026lt;').replace(/>/g,'\u0026gt;').replace(/"/g,'\u0026quot;').replace(/'/g,'\u0026#39;')}
 function num(n){n=Number(n);return Number.isFinite(n)?n:0}
 function fmt(n){n=num(n);return n.toLocaleString('en-US')}
 function at(h){h=String(h||'').replace(/^@/,'');return h?('@'+h):'—'}
