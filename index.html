@@ -264,9 +264,9 @@ function sortDrafts(list){
 }
 function metricMarkup(d){
   if(d.kind==='scout'){
-    return `<div class=\"metric score\">${esc(String(num(d.score)))}<small>score · 0–100</small></div>`;
+    return `<div class="metric score">${esc(String(num(d.score)))}<small>score · 0–100</small></div>`;
   }
-  return `<div class=\"metric views\">${esc(fmt(d.views))}<small>views · not a score</small></div>`;
+  return `<div class="metric views">${esc(fmt(d.views))}<small>views · not a score</small></div>`;
 }
 function render(list){
   const el=document.getElementById('drafts');
@@ -274,13 +274,36 @@ function render(list){
   const scouts=sorted.filter(d=>d.kind==='scout').length;
   const watch=sorted.length-scouts;
   document.getElementById('draft-note').textContent=`${scouts} scout by score · ${watch} watchlist by views`;
-  if(!sorted.length){el.innerHTML='<p class=\"muted\">No drafts yet.</p>';return}
+  if(!sorted.length){el.innerHTML='<p class="muted">No drafts yet.</p>';return}
   el.innerHTML=sorted.map((d,i)=>{
     const id='draft-'+i;
     const kind=d.kind==='scout'?'scout':'watch';
     const kindLabel=d.kind==='scout'?'scout':'watchlist';
     const measure=d.kind==='scout'?`score ${num(d.score)}`:`${fmt(d.views)} views`;
-    return `<article class=\"card\">\n      <div class=\"card-top\">\n        <div class=\"identity\">\n          <div class=\"rank\">${String(i+1).padStart(2,'0')}</div>\n          <div>\n            <div class=\"name\">${esc(at(d.handle))}</div>\n            <div class=\"handle\">${esc(d.source||'X Viral Rewriter')} · ${esc(d.received||'')}</div>\n          </div>\n        </div>\n        ${metricMarkup(d)}\n      </div>\n      <div class=\"pills\">\n        <span class=\"pill ${kind}\">${esc(kindLabel)}</span>\n        <span class=\"pill\">${esc(measure)}</span>\n      </div>\n      <div class=\"draft-block\">\n        <div class=\"draft-head\">\n          <span class=\"draft-label\">Rewrite · copy into X</span>\n          <button type=\"button\" class=\"copy-btn\" data-draft-id=\"${id}\">COPY</button>\n        </div>\n        <div class=\"draft-text\" id=\"${id}\">${esc(d.text||'')}</div>\n      </div>\n      <a class=\"post-link\" href=\"${esc(d.url||'#')}\" target=\"_blank\" rel=\"noopener\">ORIGINAL POST ↗</a>\n    </article>`;
+    return `<article class="card">
+      <div class="card-top">
+        <div class="identity">
+          <div class="rank">${String(i+1).padStart(2,'0')}</div>
+          <div>
+            <div class="name">${esc(at(d.handle))}</div>
+            <div class="handle">${esc(d.source||'X Viral Rewriter')} · ${esc(d.received||'')}</div>
+          </div>
+        </div>
+        ${metricMarkup(d)}
+      </div>
+      <div class="pills">
+        <span class="pill ${kind}">${esc(kindLabel)}</span>
+        <span class="pill">${esc(measure)}</span>
+      </div>
+      <div class="draft-block">
+        <div class="draft-head">
+          <span class="draft-label">Rewrite · copy into X</span>
+          <button type="button" class="copy-btn" data-draft-id="${id}">COPY</button>
+        </div>
+        <div class="draft-text" id="${id}">${esc(d.text||'')}</div>
+      </div>
+      <a class="post-link" href="${esc(d.url||'#')}" target="_blank" rel="noopener">ORIGINAL POST ↗</a>
+    </article>`;
   }).join('');
   el.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',()=>{
     const node=document.getElementById(btn.dataset.draftId);
@@ -295,7 +318,7 @@ async function boot(){
   const handle=d.brand_handle||'@cpynex';
   document.title=title+' · '+handle;
   const tEl=document.getElementById('brand-title');
-  if(tEl) tEl.innerHTML=`${esc(title)} <span class=\"handle\" id=\"brand-handle\">· ${esc(handle)}</span>`;
+  if(tEl) tEl.innerHTML=`${esc(title)} <span class="handle" id="brand-handle">· ${esc(handle)}</span>`;
   const drafts=Array.isArray(d.inbox_drafts)?d.inbox_drafts:[];
   const replies=Array.isArray(d.inbox_replies)?d.inbox_replies:[];
   document.getElementById('meta').textContent=`${replies.length} replies · ${drafts.length} drafts · ${d.date||''} · ${d.timezone||''}`;
@@ -306,10 +329,31 @@ function renderReplies(list){
   const el=document.getElementById('replies');
   const note=document.getElementById('reply-note');
   if(note) note.textContent=`${list.length} replies · nothing is posted from this page`;
-  if(!list.length){el.innerHTML='<p class=\"muted\">No replies yet.</p>';return}
+  if(!list.length){el.innerHTML='<p class="muted">No replies yet.</p>';return}
   el.innerHTML=list.map((r,i)=>{
     const id='reply-'+i;
-    return `<article class=\"card\">\n      <div class=\"card-top\">\n        <div class=\"identity\">\n          <div class=\"rank\">${String(i+1).padStart(2,'0')}</div>\n          <div>\n            <div class=\"name\">${esc(at(r.reply_to))}</div>\n            <div class=\"handle\">${esc(r.source||'X Reply')} · ${esc(r.received||'')}</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"pills\">\n        <span class=\"pill reply\">reply</span>\n      </div>\n      <div class=\"draft-block\">\n        <div class=\"draft-head\">\n          <span class=\"draft-label\">Reply · copy into X</span>\n          <button type=\"button\" class=\"copy-btn\" data-draft-id=\"${id}\">COPY</button>\n        </div>\n        <div class=\"draft-text\" id=\"${id}\">${esc(r.text||'')}</div>\n      </div>\n      <a class=\"post-link\" href=\"${esc(r.url||'#')}\" target=\"_blank\" rel=\"noopener\">ORIGINAL POST ↗</a>\n    </article>`;
+    return `<article class="card">
+      <div class="card-top">
+        <div class="identity">
+          <div class="rank">${String(i+1).padStart(2,'0')}</div>
+          <div>
+            <div class="name">${esc(at(r.reply_to))}</div>
+            <div class="handle">${esc(r.source||'X Reply')} · ${esc(r.received||'')}</div>
+          </div>
+        </div>
+      </div>
+      <div class="pills">
+        <span class="pill reply">reply</span>
+      </div>
+      <div class="draft-block">
+        <div class="draft-head">
+          <span class="draft-label">Reply · copy into X</span>
+          <button type="button" class="copy-btn" data-draft-id="${id}">COPY</button>
+        </div>
+        <div class="draft-text" id="${id}">${esc(r.text||'')}</div>
+      </div>
+      <a class="post-link" href="${esc(r.url||'#')}" target="_blank" rel="noopener">ORIGINAL POST ↗</a>
+    </article>`;
   }).join('');
   el.querySelectorAll('.copy-btn').forEach(btn=>btn.addEventListener('click',()=>{
     const node=document.getElementById(btn.dataset.draftId);
